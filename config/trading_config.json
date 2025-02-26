@@ -1,0 +1,88 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Feb 21 18:14:34 2025
+
+@author: mahes
+"""
+
+# config/trading_config.json
+
+{
+    "api_key": "your_api_key",
+    "api_secret": "your_api_secret",
+    "totp_secret": "your_totp_secret",
+    
+    "symbols": [
+        "SBIN",
+        "RELIANCE",
+        "INFY"
+    ],
+    
+    "timeframes": {
+        "primary": 15,
+        "secondary": 5
+    },
+    
+    "trading_hours": {
+        "start": "09:15",
+        "end": "15:20",
+        "square_off": "15:15"
+    },
+    
+    "capital_allocation": {
+        "total": 100000,
+        "per_trade": 20000,
+        "per_symbol": 50000
+    },
+    
+    "risk_params": {
+        "max_daily_loss": 3000,
+        "max_loss_per_trade": 1000,
+        "max_drawdown": 0.05,
+        "max_positions": 5,
+        "position_size_risk": 0.02
+    },
+    
+    "strategy_params": {
+        "gann_increments": [0.125, 0.25, 0.5, 0.75, 1.0, 0.75, 0.5, 0.25],
+        "num_values": 35,
+        "buffer_percentage": 0.002,
+        "num_targets": 3,
+        "trailing_stop": 0.003
+    },
+    
+    "symbol_params": {
+        "SBIN": {
+            "quantity": 100,
+            "buffer_percentage": 0.003
+        },
+        "RELIANCE": {
+            "quantity": 50,
+            "buffer_percentage": 0.002
+        },
+        "INFY": {
+            "quantity": 75,
+            "buffer_percentage": 0.002
+        }
+    },
+    
+    "paper_trading": {
+        "initial_capital": 100000,
+        "slippage_percent": 0.05,
+        "transaction_cost": 0.0003
+    },
+    
+    "monitoring": {
+        "update_interval": 1,
+        "status_log_interval": 300,
+        "drawdown_alert": 0.02,
+        "profit_alert": 0.02,
+        "loss_alert": 0.01
+    },
+    
+    "reporting": {
+        "save_trades": true,
+        "generate_charts": true,
+        "data_retention_days": 30
+    }
+}

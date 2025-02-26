@@ -1,0 +1,41 @@
+/* trading.css */
+Screen {
+    align: center middle;
+}
+
+#login-container {
+    width: 60;
+    height: 20;
+    border: solid green;
+    padding: 1;
+}
+
+#mode-panel {
+    width: 30;
+    height: 100%;
+    border: solid blue;
+}
+
+#content-panel {
+    width: 100;
+    height: 100%;
+    border: solid green;
+}
+
+Button {
+    width: 100%;
+    margin: 1;
+}
+
+DataTable {
+    height: 1fr;
+    margin: 1;
+}
+
+.success {
+    background: green;
+}
+
+.error {
+    background: red;
+}

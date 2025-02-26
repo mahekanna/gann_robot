@@ -1,0 +1,113 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Feb 25 23:07:33 2025
+
+@author: mahes
+"""
+
+/* interface/app/styles/app.tcss */
+
+/* Global styles */
+Screen {
+    background: $surface;
+    color: $text;
+}
+
+/* Header and Footer */
+Header {
+    dock: top;
+    height: 3;
+    background: $primary;
+    content-align: center middle;
+    padding: 1;
+}
+
+Footer {
+    dock: bottom;
+    height: 3;
+    background: $primary;
+}
+
+/* Login Screen */
+#login-container {
+    width: 60;
+    height: 30;
+    border: solid $accent;
+    padding: 2;
+    margin: 1;
+}
+
+#login-title {
+    text-align: center;
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+#login-status {
+    text-align: center;
+    margin-bottom: 1;
+}
+
+Input {
+    margin: 1;
+    width: 100%;
+}
+
+Button {
+    margin: 1;
+    min-width: 20;
+    align: center middle;
+}
+
+Button:hover {
+    background: $primary-lighten-2;
+}
+
+/* Trading Screen */
+#trading-layout {
+    width: 100%;
+    height: 100%;
+}
+
+#sidebar {
+    width: 30;
+    background: $panel;
+    padding: 1;
+}
+
+#main-content {
+    width: 100;
+    padding: 1;
+}
+
+DataTable {
+    height: 1fr;
+    margin: 1;
+    border: solid $primary;
+}
+
+/* Order Panel */
+#order-title {
+    text-align: center;
+    text-style: bold;
+    margin-bottom: 1;
+}
+
+#buy-btn {
+    background: $success;
+}
+
+#sell-btn {
+    background: $error;
+}
+
+/* Backtest Screen */
+#backtest-container {
+    padding: 2;
+}
+
+#backtest-title {
+    text-align: center;
+    text-style: bold;
+    margin-bottom: 1;
+}
